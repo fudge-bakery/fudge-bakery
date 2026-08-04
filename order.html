@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fudge Bakery Co. | Place Order</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header class="navbar">
+<div class="logo-container">
+<a href="index.html"><img src="image/logo.png" alt="Fudge Bakery Co Logo" class="logo-img"></a>
+</div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="order.html" class="active btn-primary">Order Now</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="page-container order-page">
+<div class="order-box">
+<h2>Place Your Order</h2>
+<p>Select your favorite treat below to order instantly via WhatsApp!</p>
+
+<form id="orderForm">
+<div class="form-group">
+<label>Your Name:</label>
+<input type="text" id="custName" placeholder="Enter your full name" required>
+</div>
+
+<div class="form-group">
+<label>Select Item:</label>
+<select id="selectedItem">
+<option value="Tiramisu Tub (₹300)">Tiramisu Tub (₹300)</option>
+<option value="Mocha Magic">Mocha Magic</option>
+<option value="Mocha Cupcake (₹60)">Mocha Cupcakes</option>
+<option value="Assorted Brownie Box (4 Pcs)">Assorted Brownie Box (4 Pcs)</option>
+<option value="Double Chocolate Banana Bread (₹350)">Double Chocolate Banana Bread</option>
+<option value="Custom Birthday Cake">Custom Birthday Cake</option>
+</select>
+</div>
+
+<div class="form-group">
+<label>Quantity / Customization Notes:</label>
+<textarea id="notes" placeholder="e.g. 2 Tiramisu Tubs, or custom message for cake" rows="4"></textarea>
+</div>
+
+<button type="submit" class="btn-whatsapp">Send Order via WhatsApp 💬</button>
+</form>
+</div>
+</main>
+
+<footer>
+<p>&copy; 2026 Fudge Bakery Co. | Made with Love</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
