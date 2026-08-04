@@ -39,14 +39,24 @@
 </div>
 </section>
 
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="89554135-a8d8-40b3-a0cb-18c895cd0006"
-  data-page-id="fudge=bakery-reviews"
-  data-page-url="https://fudge-bakery.github.io/fudge-bakery/"
-  data-page-title="Fudge Bakery Reviews"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+<!-- Live Customer Reviews Section -->
+<section style="max-width: 800px; margin: 40px auto; padding: 20px;">
+<h2 style="font-family: 'Playfair Display', serif; color: #4a2e2b; text-align: center; margin-bottom: 20px;">Customer Reviews & Feedback 💬</h2>
+
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "https://fudge-bakery.github.io/fudge-bakery/";
+this.page.identifier = "fudge-bakery-reviews";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://fudge-bakery-co-2.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+</section>
 
 
 <footer>
