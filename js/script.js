@@ -1,20 +1,25 @@
 document.getElementById('orderForm').addEventListener('submit', function(e) {
 e.preventDefault();
 
-// Replace with your business WhatsApp phone number (with country code, no + or spaces)
-const phoneNumber = "919876543210";
+// WhatsApp Phone Number (with India country code 91)
+const phoneNumber = "918296538496";
 
+// Grab input values from HTML
 const name = document.getElementById('custName').value;
 const item = document.getElementById('selectedItem').value;
 const notes = document.getElementById('notes').value;
 
-const message = `Hello Fudge Bakery Co.! %0A%0A` +
-`*New Order Details:*%0A` +
-`• *Name:* ${encodeURIComponent(name)}%0A` +
-`• *Item:* ${encodeURIComponent(item)}%0A` +
-`• *Notes/Customization:* ${encodeURIComponent(notes)}`;
+// Create the order text message
+const message = `Hello Fudge Bakery Co.!\n\n` +
+`*New Order Details:*\n` +
+`*Name:* ${name}\n` +
+`*Item:* ${item}\n` +
+`*Notes:* ${notes}`;
 
-const whatsappUrl = `https://wa.me/${8296538496}?text=${8296538496}`;
+// Properly encode the message string for WhatsApp URL
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
+// Open WhatsApp
 window.open(whatsappUrl, '_blank');
 });
+
